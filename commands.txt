@@ -19,9 +19,13 @@ npm install eslint prettier @typescript-eslint/eslint-plugin @typescript-eslint/
 npm install husky --save-dev
 npx husky install
 npm pkg set scripts.prepare="husky install"
+npx husky add .husky/pre-commit "npm run lint"
+git add .husky/pre-commit
 
-//sass
-npm install -D sass
+//material-ui
+npm install @mui/material @mui/styled-engine-sc styled-components
+npm install @fontsource/roboto
+npm install @mui/icons-material
 
 //react-router-dom
 npm install react-router-dom
